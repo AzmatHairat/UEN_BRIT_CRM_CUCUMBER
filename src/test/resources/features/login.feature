@@ -4,13 +4,12 @@ Feature: login functionality
   Scenario: Manager login
     Given user on the login page
 
-    When user logs in using "myemail@hotmail.com" and "mysecurepassword"
+    When user logs in using "EventsCRM_Manager3@info.com" and "Ugh45wQ14"
     Then homepage should be displayed
-    And title should be "homepage"
+
 
 
   Scenario: User login
     Given user on the login page
-    When user logs in using "myemail@gmail.com" and "regularpassword"
+    When user logs in using "EventsCRM_User@info.com" and "opJu56KKL41"
     Then homepage should be displayed
-    And title should be "homepage"

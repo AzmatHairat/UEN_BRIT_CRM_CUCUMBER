@@ -61,7 +61,7 @@ public class TestBase extends BrowserUtils {
         report.attachReporter(htmlReporter);
 
         report.setSystemInfo("Environment", "Staging");
-        report.setSystemInfo("Browser", ConfigurationReader.getProperties("browser"));
+        report.setSystemInfo("Browser", ConfigurationReader.getProperty("browser"));
         report.setSystemInfo("OS", System.getProperty("os.name"));
         htmlReporter.config().setDocumentTitle("BRITE - ERP Reports");
         htmlReporter.config().setReportName("BriteErp Automated Test Reports");

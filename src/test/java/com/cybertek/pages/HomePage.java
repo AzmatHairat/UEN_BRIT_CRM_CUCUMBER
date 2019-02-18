@@ -17,7 +17,7 @@ public class HomePage extends TestBase {
     public static  @FindBy(xpath = "//span[@class='oe_menu_text'][contains(text(),'CRM')]")
     WebElement CRMButton;
 
-    //=======elements on the left=========
+
     static public @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[14]/span")
     WebElement pipelinet;
 
