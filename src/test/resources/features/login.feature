@@ -8,16 +8,12 @@ Feature: login functionality
 
 
   Scenario: CRM click
-#    Given user on the login page
     And user click the CRM button
     Then CRM page should be displayed
 
 
-
-
-
-
+#User option
 #  Scenario: User login
 #    Given user on the login page
 #    When user logs in using "EventsCRM_User@info.com" and "opJu56KKL41"
-#    Then homepage should be displayed
+
