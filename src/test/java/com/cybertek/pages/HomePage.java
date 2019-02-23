@@ -1,13 +1,11 @@
 package com.cybertek.pages;
 
 import com.cybertek.utilities.Driver;
-import com.cybertek.utilities.TestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class HomePage extends TestBase {
+public class HomePage  {
 
     public HomePage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -144,9 +142,9 @@ public class HomePage extends TestBase {
 
 
 
-    public static void ClickCRM(){
-        wait.until(ExpectedConditions.elementToBeClickable(CRMButton));
-        CRMButton.click();
-        wait.until(ExpectedConditions.titleContains("Pipelin"));
-    }
+//    public static void ClickCRM(){
+//        wait.until(ExpectedConditions.elementToBeClickable(CRMButton));
+//        CRMButton.click();
+//        wait.until(ExpectedConditions.titleContains("Pipelin"));
+//    }
 }

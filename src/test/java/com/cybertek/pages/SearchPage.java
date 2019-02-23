@@ -1,13 +1,12 @@
 package com.cybertek.pages;
 
 import com.cybertek.utilities.Driver;
-import com.cybertek.utilities.TestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class SearchPage extends TestBase {
+public class SearchPage  {
 
     public SearchPage(){
         PageFactory.initElements(Driver.getDriver(),this);
