@@ -77,11 +77,6 @@
 
                     <includes>
                         <include>**/*CukesRunner.java</include>
-                        <include>**/*AbidasCukesRunner.java</include>
-                        <include>**/*AsiyasCukesRunner.java</include>
-                        <include>**/*AzmatsCukesRunner.java</include>
-                        <include>**/*EkeramsCukesRunner.java</include>
-                        <include>**/*MuyasarsCukesRunner.java</include>
                         <include>**/*SmokeTestRunner.java</include>
 
 
