@@ -20,7 +20,7 @@ public class BRIT_1654 {
     @Then("User click the Activity types button")
     public void user_click_the_Activity_types_button() {
         Driver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+        new Actions(Driver.getDriver()).pause(2000).perform();
         wait.until(ExpectedConditions.visibilityOf(homePage.ActivityTypesButton));
         homePage.ActivityTypesButton.click();
         new Actions(Driver.getDriver()).pause(2000).perform();
