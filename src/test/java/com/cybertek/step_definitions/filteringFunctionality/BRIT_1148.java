@@ -12,17 +12,6 @@ import org.testng.Assert;
 
 public class BRIT_1148 {
 
-/*
-@Then(“User click the Activity types button”)
-   public void user_click_the_Activity_types_button() {
-       Driver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-       new Actions(Driver.getDriver()).pause(2000).perform();
-       wait.until(ExpectedConditions.visibilityOf(homePage.ActivityTypesButton));
-       homePage.ActivityTypesButton.click();
-       new Actions(Driver.getDriver()).pause(2000).perform();
-
-   }
- */
         SearchPage searchPage = new SearchPage();
         HomePage homePage = new HomePage();
 
