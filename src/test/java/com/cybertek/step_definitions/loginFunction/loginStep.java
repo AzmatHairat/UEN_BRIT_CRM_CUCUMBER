@@ -32,7 +32,7 @@ public class loginStep  {
         // url is in the properties file
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         Driver.getDriver().manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-        //Driver.getDriver().manage().timeouts().pageLoadTimeout(100,TimeUnit.SECONDS);
+        Driver.getDriver().manage().timeouts().pageLoadTimeout(100,TimeUnit.SECONDS);
 
     }
 
@@ -76,7 +76,7 @@ public class loginStep  {
     @Then("CRM page should be displayed")
     public void crm_page_should_be_displayed() {
      String expectedTitile = "Pipeline - Odoo";
-
+        new Actions(Driver.getDriver()).pause(2000).perform();
      wait.until(ExpectedConditions.titleContains("Pipeline"));
      Assert.assertEquals(Driver.getDriver().getTitle(),expectedTitile);
         System.out.println("this is CRM page ");

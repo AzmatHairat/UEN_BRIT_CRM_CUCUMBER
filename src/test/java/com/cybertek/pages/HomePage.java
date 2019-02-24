@@ -58,6 +58,9 @@ public class HomePage  {
     static public @FindBy(xpath = "//button[@accesskey='s']")
     WebElement buttonSvae;
 
+    static public @FindBy(xpath = "//div[@class='o_form_buttons_edit']//button[@type='button'][contains(text(),'Save')]")
+    WebElement editsave;
+
     static public @FindBy(xpath = "//a[contains(text(),'Activity Types')]")
     WebElement creatAfterSaveClick;
 
